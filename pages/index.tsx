@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#90D253]/90">
       <Head>
-        <title>Camilo's Portfolio</title>
+        <title>Camilo Portfolio</title>
         <meta name="description" content="Camilo's portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

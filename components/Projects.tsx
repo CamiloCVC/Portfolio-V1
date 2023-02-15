@@ -26,7 +26,7 @@ function Projects({}: Props) {
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#90D253]/90">
         {projects.map((p, i) => (
-          <div className="w-screen flex-shrink-0 snap-center flex flex-col space-y-4 items-center justify-center p-14 md:p-40 h-[92vh] md:h-[84vh] ">
+          <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-4 items-center justify-center p-14 md:p-40 h-[92vh] md:h-[84vh] ">
             <motion.img
               initial={{y:-300, opacity:0 }}
               transition={{duration:1.2}}
