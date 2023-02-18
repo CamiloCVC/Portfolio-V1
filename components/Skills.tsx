@@ -79,8 +79,8 @@ function Skills({}: Props) {
       </h3>
       <h3 className='absolute top-[8.8rem] uppercase tracking-[3px] text-gray-500 text-sm'>Hover over a skill for currency profieciency</h3>
       <div className='grid grid-cols-4 gap-3 md:gap-4 '>
-        {skillsList.map((s)=>(
-          <Skill directionLeft={s.directionLeft} img={s.img} prof={s.prof}/>
+        {skillsList.map((s, i)=>(
+          <Skill key={i} directionLeft={s.directionLeft} img={s.img} prof={s.prof}/>
         ))}
       </div>
     </motion.div>
