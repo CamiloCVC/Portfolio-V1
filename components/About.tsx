@@ -24,9 +24,13 @@ function About({}: Props) {
           background
         </h4>
         <p className="text-base">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quo
-          ipsam magni rerum cumque beatae earum odio quisquam animi consequuntur
-          illum ipsum nobis mollitia dignissimos quod illo, modi culpa unde!
+          At the age of 17, i entered the university with a scholarship for the
+          Systems Engineering degree in which i am in the 5th semester, and in
+          2022 i enrolled in Soy Henry bootcamp in the Full-Stack Developer
+          program from which i already graduated, i have learned a lot in
+          this time studying new technologies on my own and improving my skills,
+          and i feel ready to take the step into the world of work in
+          order to continue growing in a professional environment.
         </p>
       </div>
     </div>
