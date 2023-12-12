@@ -29,9 +29,10 @@ function ExperienceCard({ datosGenerales, tecnologias }: Props) {
         <h4 className="text-3xl font-light">{datosGenerales.position}</h4>
         <p className="font-bold text-2xl mt-1">{datosGenerales.empresa}</p>
         <div className="flex space-x-2 my-2">
-          {tecnologias.map((data) => {
+          {tecnologias.map((data,i) => {
             return (
               <Image
+                key={i}
                 src={data}
                 alt=""
                 width={30}
@@ -45,8 +46,8 @@ function ExperienceCard({ datosGenerales, tecnologias }: Props) {
         </p>
 
         <ul className="list-disc space-y-4 ml-5 text-base">
-          {datosGenerales.funciones.map((data) => {
-            return <li>{data}</li>;
+          {datosGenerales.funciones.map((data,i) => {
+            return <li key={i}>{data}</li>;
           })}
         </ul>
       </div>
