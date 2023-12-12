@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Content } from "@next/font/google";
 
 type Props = {};
 
@@ -10,15 +11,24 @@ function Projects({}: Props) {
       img: "https://res.cloudinary.com/dvfl2dcrs/image/upload/v1676139404/Weather_Mockup_aybydj.png",
       Title: "Weather App",
       url: "https://weather-app-camilocvc.vercel.app/",
+      content: "Web application that allows checking the weather of any city in the world using the OpenWeather API. It has a backend developed in NodeJS and Express. The frontend is developed in HTML, CSS, and JS. The project is deployed on Vercel and Railway"
     },
     {
       img: "https://res.cloudinary.com/dvfl2dcrs/image/upload/v1676139404/Pi_Mockup_hef7sr.png",
       Title: "Videogames Page",
+      content: "Web application that allows you to query information about video games, obtaining this information from an external API, developed with the MERN stack and published on Vercel."
     },
     {
       img: "https://res.cloudinary.com/dvfl2dcrs/image/upload/v1676139404/Bookturn_Mockup_pjhtie.png",
       Title: "Bookturn",
       url: "https://bookturn.vercel.app",
+      content:"Platform for organizing shifts for beauty salons and for clients to request those shifts. Made with Strapi, NextJs, and Tailwind (among other libraries). Features: local and Google authentication, search functionality, filters, comments, reports, react-calendar, email notifications."
+    },
+    {
+      img: "https://res.cloudinary.com/dvfl2dcrs/image/upload/v1702413646/Group_1_vgokfb.png",
+      Title: "Zmey Athletics",
+      url: "https://www.zmeyathletics.com/",
+      content:"E-commerce created from scratch, developed with a team in scrum methodology, using next.js, tailwind, node.js, MongoDB, and more."
     },
   ];
 
@@ -43,7 +53,7 @@ function Projects({}: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="w-[21rem] h-[13rem] md:w-[26rem] md:h-[18rem]"
+              className="w-[21rem] h-[13rem] md:w-[30rem] md:h-[18rem]"
               src={p.img}
               alt={p.Title}
             />
@@ -56,7 +66,7 @@ function Projects({}: Props) {
                   {p.Title}
                 </h4>
               </Link>
-              {/* <p className="text-sm md:text-lg text-center md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, aut. Laborum distinctio sed quasi adipisci voluptate, laudantium unde aspernatur magni quo iste nostrum veritatis accusantium alias, repellendus, praesentium magnam eligendi.</p> */}
+              <p className="text-sm md:text-lg text-center md:text-left">{p.content}</p>
             </div>
           </div>
         ))}

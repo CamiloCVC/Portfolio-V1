@@ -21,7 +21,7 @@ function Skill({ directionLeft, img, prof }: Props) {
           opacity: 0,
         }}
         transition={{ duration: 0.5 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        whileInView={{ opacity: 1, x: 0}}
         src={img}
         className="rounded-full border border-gray-500 object-cover w-[5rem] h-[5rem] xl:w-28 xl:h-28 filter group-hover:grayscale transition duration-300 ease-in-out"
       />
